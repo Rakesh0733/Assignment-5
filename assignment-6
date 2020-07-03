@@ -1,0 +1,333 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled6.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPi+p5kn99Oa6e7knUqy9xQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Rakesh0733/Assignment-5/blob/master/assignment-6\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "MCjtDvqSHvNx",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "meZsDGgIHwx_",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question_1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "yt90DMdlIj1L",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "54af37cd-52e0-4046-f13e-d28b32bc0ac3"
+      },
+      "source": [
+        " # Python program to find square root\n",
+        " \n",
+        "num = int(input(\"Enter the value of num\"))\n",
+        "num_sqrt = num ** 0.5\n",
+        "print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the value of num5\n",
+            "The square root of 5.000 is 2.236\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3K9qC-h1IrVx",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question-2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "A-7m_KWDItcY",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "7a6b2a00-010c-40a6-9d52-34ada0350d69"
+      },
+      "source": [
+        " # Python program to check if a number is positive , negative or 0.\n",
+        " \n",
+        "num = float(input(\"Enter a number: \"))\n",
+        "if num > 0:\n",
+        "   print(\"Positive number\")\n",
+        "elif num == 0:\n",
+        "   print(\"Zero\")\n",
+        "else:\n",
+        "   print(\"Negative number\")"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 2\n",
+            "Positive number\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5HEgIK3jI0nV",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question-3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WOk3mvikI2VO",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "a92f7ab4-7a1f-4cc8-b5ce-18ec4d587b5d"
+      },
+      "source": [
+        " # Python program to check leap year.\n",
+        " \n",
+        "year = int(input(\"Enter the year: \"))\n",
+        "if (year % 4) == 0:\n",
+        "   if (year % 100) == 0:\n",
+        "       if (year % 400) == 0:\n",
+        "           print(\"{0} is a leap year\".format(year))\n",
+        "       else:\n",
+        "           print(\"{0} is not a leap year\".format(year))\n",
+        "   else:\n",
+        "       print(\"{0} is a leap year\".format(year))\n",
+        "else:\n",
+        "   print(\"{0} is not a leap year\".format(year))"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the year: 2000\n",
+            "2000 is a leap year\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dLZ2iakxI-VJ",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question-4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fz3uqPsVJALL",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 119
+        },
+        "outputId": "8be2e13e-9b90-458a-9a95-45d977bb005d"
+      },
+      "source": [
+        " # Python program to print the fibonacci sequence.\n",
+        " \n",
+        "n = int(input(\"How many terms? \"))\n",
+        "n1 =int(input(\"Enter the staring value\"))\n",
+        "n2 =int(input(\"Enter the second value\"))\n",
+        "count = 0\n",
+        "if n <= 0:\n",
+        "   print(\"Please enter a positive integer\")\n",
+        "elif n == 1:\n",
+        "   print(\"Fibonacci sequence upto\",n,\":\")\n",
+        "   print(n1)\n",
+        "else:\n",
+        "   print(\"Fibonacci sequence:\")\n",
+        "   while count < n:\n",
+        "       print(n1)\n",
+        "       nth = n1 + n2\n",
+        "# updating the values\n",
+        "       n1 = n2\n",
+        "       n2 = nth\n",
+        "       count += 1"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "How many terms? 2\n",
+            "Enter the staring value4\n",
+            "Enter the second value6\n",
+            "Fibonacci sequence:\n",
+            "4\n",
+            "6\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gWnZtkrdJaXm",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question-5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "yaiUJSJmJdRo",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "61696345-0986-453e-def1-594d8d7a2183"
+      },
+      "source": [
+        " # Python program to check armstrong number.\n",
+        " \n",
+        "num = int(input(\"Enter a number: \"))\n",
+        "sum = 0\n",
+        "temp = num\n",
+        "while temp > 0:\n",
+        "   digit = temp % 10\n",
+        "   sum += digit ** 3\n",
+        "   temp //= 10\n",
+        "if num == sum:\n",
+        "   print(num,\"is an Armstrong number\")\n",
+        "else:\n",
+        "   print(num,\"is not an Armstrong number\")"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 162\n",
+            "162 is not an Armstrong number\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "iDr4wj08Jrsj",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question-6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RsOj4l6jJtnO",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 119
+        },
+        "outputId": "37a81356-f463-4023-a30c-d1869e57d30c"
+      },
+      "source": [
+        "# Python program to find armstrong number in an interval.\n",
+        " \n",
+        "lower = int(input(\"Enter the starting value\"))\n",
+        "upper = int(input(\"Enter the ending value\"))\n",
+        "for num in range(lower, upper + 1):\n",
+        "   order = len(str(num))\n",
+        "   sum = 0\n",
+        "   temp = num\n",
+        "   while temp > 0:\n",
+        "       digit = temp % 10\n",
+        "       sum += digit ** order\n",
+        "       temp //= 10\n",
+        "   if num == sum:\n",
+        "       print(num)"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the starting value100\n",
+            "Enter the ending value1000\n",
+            "153\n",
+            "370\n",
+            "371\n",
+            "407\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
